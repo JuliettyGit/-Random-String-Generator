@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import { interval } from 'rxjs';
 
 @Component({
@@ -9,7 +9,6 @@ import { interval } from 'rxjs';
 
 export class TextFieldComponent implements OnInit {
   randomString:string = '';
-  text = document.getElementById('textField');
 
   constructor() {
     this.getString();
@@ -43,16 +42,15 @@ export class TextFieldComponent implements OnInit {
   }
 
   containZero(): void{
-    // this.text.className = '';
-    console.log("0");
+    console.log("The string contain 0");
   }
 
   isPalindrome(): void{
-    console.log("revert");
+    console.log("The string is a palindrome");
   }
 
   isNumericString(): void{
-    console.log('123');
+    console.log('The string consists of numbers');
   }
 }
 

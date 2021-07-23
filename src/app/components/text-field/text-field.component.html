@@ -1,5 +1,6 @@
-<div class="form-floating m-5">
-  <div class="d-grid gap-2">
-  <button type="button" class="btn btn-primary fs-1" (click)="getString()" style="height: 100px; letter-spacing: 0.5em">{{randomString}}</button>
-  </div>
+<div [className]="'d-grid gap-2 m-5'">
+  <button type="button" id="textField"
+          [className]="'btn btn-primary fs-1'"
+          (click)="getString()"
+  >{{randomString}}</button>
 </div>
